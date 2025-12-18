@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--
+        ███████     █████    █████                        
+      ███▒▒▒▒▒███  ▒▒███    ▒▒███                         
+     ███     ▒▒███ ███████   ▒███████    ██████  ████████ 
+    ▒███      ▒███▒▒▒███▒    ▒███▒▒███  ███▒▒███▒▒███▒▒███
+    ▒███      ▒███  ▒███     ▒███ ▒███ ▒███████  ▒███ ▒▒▒ 
+    ▒▒███     ███   ▒███ ███ ▒███ ▒███ ▒███▒▒▒   ▒███     
+     ▒▒▒███████▒    ▒▒█████  ████ █████▒▒██████  █████    
+       ▒▒▒▒▒▒▒       ▒▒▒▒▒  ▒▒▒▒ ▒▒▒▒▒  ▒▒▒▒▒▒  ▒▒▒▒▒     
+    -->
+    <div class="social">
+        <svg viewBox="0 0 1 191" id="soc1" ><path fill="#abb2bf" fill-rule="evenodd" d="M0 191V0h1v191z" clip-rule="evenodd"/></svg>
+        <a title="Optimist2608" href="https://github.com/Optimist2608" target="_blank"><svg viewBox="0 0 21 20"><path fill="#abb2bf" d="M10.5 0C4.7 0 0 4.59 0 10.25c0 4.54 3 8.37 7.18 9.73.52.09.72-.22.72-.49l-.01-1.9c-2.64.47-3.32-.63-3.53-1.21-.12-.3-.63-1.2-1.08-1.45-.37-.2-.9-.67-.01-.68.82-.01 1.42.74 1.61 1.05.95 1.55 2.46 1.12 3.06.85.1-.67.37-1.12.67-1.37-2.34-.26-4.78-1.14-4.78-5.07 0-1.11.4-2.03 1.08-2.75A3.6 3.6 0 0 1 5 4.24s.88-.27 2.9 1.05a10 10 0 0 1 5.24 0c2-1.33 2.89-1.05 2.89-1.05a3.6 3.6 0 0 1 .1 2.72 4 4 0 0 1 1.08 2.75c0 3.94-2.45 4.81-4.8 5.07.39.32.72.93.72 1.9l-.02 2.81c0 .27.2.6.73.49 2.08-.69 3.9-2 5.18-3.74A10 10 0 0 0 21 10.25C21 4.6 16.3 0 10.5 0"/></svg></a>
+        <a title="akkmakara@mail.ru" href="" target="_blank"><svg viewBox="0 0 512 512"><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256 256-114.6 256-256S397.4 0 256 0m0 472c-119.3 0-216-96.7-216-216S136.7 40 256 40s216 96.7 216 216-96.7 216-216 216"/><path d="M368 234.38v74.43l-54.5-59.42 16.72-11.31a56 56 0 0 1-16.69-7.2L256 271.75 166.28 208h127.35c-2.4-4.98-4-10.34-4.82-16H128v160h256V223.06a56 56 0 0 1-16 11.31m-224-21.85 54.5 36.86-54.5 59.42zM256 336h-92.4l45.56-79.42L256 288.25l46.84-31.67L348.41 336z"/><path d="M344 224a40 40 0 1 0 0-80 40 40 0 0 0 0 80m0-70.4 19.2 22.4H352v32h-16v-32h-11.2z"/></svg></a>
+        <a title="DeadRead7" href="https://web.telegram.org/k/?account=2#@DeadRead7" target="_blank"><svg viewBox="0 0 32 32"><path d="M16 .5a15.5 15.5 0 1 0 0 31 15.5 15.5 0 0 0 0-31m7.61 10.62L21.07 23.1c-.19.85-.7 1.05-1.4.65l-3.88-2.85-1.86 1.8c-.21.2-.39.38-.79.38l.28-3.95 7.18-6.48c.31-.28-.07-.44-.48-.16l-8.88 5.59-3.82-1.2c-.83-.26-.85-.83.17-1.23L22.54 9.9c.7-.25 1.3.17 1.07 1.22z"/></svg></a>
+    </div>
+    <!--
+     █████   █████ ██████████   █████████   ██████████  
+    ▒▒███   ▒▒███ ▒▒███▒▒▒▒▒█  ███▒▒▒▒▒███ ▒▒███▒▒▒▒███ 
+     ▒███    ▒███  ▒███  █ ▒  ▒███    ▒███  ▒███   ▒▒███
+     ▒███████████  ▒██████    ▒███████████  ▒███    ▒███
+     ▒███▒▒▒▒▒███  ▒███▒▒█    ▒███▒▒▒▒▒███  ▒███    ▒███
+     ▒███    ▒███  ▒███ ▒   █ ▒███    ▒███  ▒███    ███ 
+     █████   █████ ██████████ █████   █████ ██████████  
+    ▒▒▒▒▒   ▒▒▒▒▒ ▒▒▒▒▒▒▒▒▒▒ ▒▒▒▒▒   ▒▒▒▒▒ ▒▒▒▒▒▒▒▒▒▒   
+    -->
+    <header class="container head">
+        <div class="head_div1">
+        <p class="head_text">Макар</p>
+        </div>
+        <div class="head_div2">
+            <a href="" class="active"><span class="pink">#</span>главная</a>
+            <a href=""><span class="pink">#</span>работы</a>
+            <a href=""><span class="pink">#</span>обо-мне</a>
+            <a href=""><span class="pink">#</span>связь</a>
+            <ul >
+                <li class="lang">RU
+                    <!-- <li>EN</li> -->
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!--
+      █████████  ██████████   █████████  ███████████ █████    ███████    ██████   █████
+     ███▒▒▒▒▒███▒▒███▒▒▒▒▒█  ███▒▒▒▒▒███▒█▒▒▒███▒▒▒█▒▒███   ███▒▒▒▒▒███ ▒▒██████ ▒▒███ 
+    ▒███    ▒▒▒  ▒███  █ ▒  ███     ▒▒▒ ▒   ▒███  ▒  ▒███  ███     ▒▒███ ▒███▒███ ▒███ 
+    ▒▒█████████  ▒██████   ▒███             ▒███     ▒███ ▒███      ▒███ ▒███▒▒███▒███ 
+     ▒▒▒▒▒▒▒▒███ ▒███▒▒█   ▒███             ▒███     ▒███ ▒███      ▒███ ▒███ ▒▒██████ 
+     ███    ▒███ ▒███ ▒   █▒▒███     ███    ▒███     ▒███ ▒▒███     ███  ▒███  ▒▒█████ 
+    ▒▒█████████  ██████████ ▒▒█████████     █████    █████ ▒▒▒███████▒   █████  ▒▒█████
+     ▒▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒▒▒▒▒   ▒▒▒▒▒▒▒▒▒     ▒▒▒▒▒    ▒▒▒▒▒    ▒▒▒▒▒▒▒    ▒▒▒▒▒    ▒▒▒▒▒ 
+    -->
+    <section class="container sec1" >
+        <div class="sec1_block">
+        <h1 class="sec1_h1">
+        Я Макар <span class="pink">Web разработчик,</span><br>
+        создаю сайты для пользователей
+        </h1>
+        <p class="sec1_p">Я начинающий веб-разработчик, активно осваиваю новые языки программирования для создания современных веб-сайтов, в прошлом - авиамоделист </p>
+        <a class="sec1_a">Свяжитесь со мной!!</a>
+    </div>
+    <div class="pic_dic">
+    <picture class="me" title="Лебедев Макар Антонович">
+            <source srcset="./img/me/m6.avif" type="image/avif">
+            <source srcset="./img/me/m6.webp" type="image/webp">
+            <img class="pic__me" src="./img/me/m6.png" alt="me">
+        </picture>
+    <div class="under">
+        <picture class="kv">
+            <source srcset="./img/me/kv/kv.avif" type="image/avif">
+            <source srcset="./img/me/kv/kv.webp" type="image/webp">
+            <img class="pic_kv" src="./img/me/kv/kv.png" alt="kvadrat">
+        </picture>
+        <p>Работаю надо портфолио</p>
+    </div>
+    </div>
+    </section>
+    <!--
+      █████████  ██████████   █████████  ███████████ █████    ███████    ██████   █████
+     ███▒▒▒▒▒███▒▒███▒▒▒▒▒█  ███▒▒▒▒▒███▒█▒▒▒███▒▒▒█▒▒███   ███▒▒▒▒▒███ ▒▒██████ ▒▒███ 
+    ▒███    ▒▒▒  ▒███  █ ▒  ███     ▒▒▒ ▒   ▒███  ▒  ▒███  ███     ▒▒███ ▒███▒███ ▒███ 
+    ▒▒█████████  ▒██████   ▒███             ▒███     ▒███ ▒███      ▒███ ▒███▒▒███▒███ 
+     ▒▒▒▒▒▒▒▒███ ▒███▒▒█   ▒███             ▒███     ▒███ ▒███      ▒███ ▒███ ▒▒██████ 
+     ███    ▒███ ▒███ ▒   █▒▒███     ███    ▒███     ▒███ ▒▒███     ███  ▒███  ▒▒█████ 
+    ▒▒█████████  ██████████ ▒▒█████████     █████    █████ ▒▒▒███████▒   █████  ▒▒█████
+     ▒▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒▒▒▒▒   ▒▒▒▒▒▒▒▒▒     ▒▒▒▒▒    ▒▒▒▒▒    ▒▒▒▒▒▒▒    ▒▒▒▒▒    ▒▒▒▒▒ 
+    -->
+    <section class="container citate">
+        <!-- <picture class="pref">
+                <source srcset="./img/pref/pref.avif" type="image/avif">
+                <source srcset="./img/pref/pref.webp" type="image/webp">
+                <img id="pref2" src="./img/pref/pref.png" alt="pref">
+                <picture class="pref">
+                <source srcset="./img/pref/pref.avif" type="image/avif">
+                <source srcset="./img/pref/pref.webp" type="image/webp">
+                <img id="pref1" src="./img/pref/pref.png" alt="pref">
+            </picture> -->
+            <h2 class="hid">Hidden</h2>
+        <div class="block_cit">
+            
+            "Веб-разработка и авиамоделирование — это как две стороны одной монеты: и там, и там нужно соединять техническую точность с творческим мышлением. Я нашел себя именно в этом слиянии."
+        </div>
+        
+        <div class="subblock_cit">
+            <p>- Лебедев Макар</p>
+        </div>
+    </section>
+    <!--
+      █████████  ██████████   █████████  ███████████ █████    ███████    ██████   █████
+     ███▒▒▒▒▒███▒▒███▒▒▒▒▒█  ███▒▒▒▒▒███▒█▒▒▒███▒▒▒█▒▒███   ███▒▒▒▒▒███ ▒▒██████ ▒▒███ 
+    ▒███    ▒▒▒  ▒███  █ ▒  ███     ▒▒▒ ▒   ▒███  ▒  ▒███  ███     ▒▒███ ▒███▒███ ▒███ 
+    ▒▒█████████  ▒██████   ▒███             ▒███     ▒███ ▒███      ▒███ ▒███▒▒███▒███ 
+     ▒▒▒▒▒▒▒▒███ ▒███▒▒█   ▒███             ▒███     ▒███ ▒███      ▒███ ▒███ ▒▒██████ 
+     ███    ▒███ ▒███ ▒   █▒▒███     ███    ▒███     ▒███ ▒▒███     ███  ▒███  ▒▒█████ 
+    ▒▒█████████  ██████████ ▒▒█████████     █████    █████ ▒▒▒███████▒   █████  ▒▒█████
+     ▒▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒▒▒▒▒   ▒▒▒▒▒▒▒▒▒     ▒▒▒▒▒    ▒▒▒▒▒    ▒▒▒▒▒▒▒    ▒▒▒▒▒    ▒▒▒▒▒ 
+    -->
+    <section class="container projects">
+        <div class="proj_head">
+            <div class="proj_head_1"><h2 class="proj title"><span class="pink">#</span>проекты</h2>
+            <picture class="proj_line">
+                <source srcset="./img/projects/line/line.avif" type="image/avif">
+                <source srcset="./img/projects/line/line.webp" type="image/webp">
+                <img src="./img/projects/line/line.png" alt="">
+            </picture>
+            </div>
+            <div class="proj_head_2">
+            <p> Посмотреть все ~~></p>
+        </div>
+    </div>
+    <div class="demo"> <!-- Проекты демки типо -->
+        <div class="demo_proj" id="proj1">
+            <table class="demo_table">
+                <tbody>
+                    <tr><td class="table_pic">
+                        
+                            <picture class="table_pic">
+                            <source srcset="./img/projects/table/portf.avif" type="image/avif">
+                            <source srcset="./img/projects/table/portf.webp" type="image/webp">
+                            <img src="./img/projects/table/portf.png" alt="photo_portfolio">
+                            </picture>
+                        
+                    </td></tr>
+                    <tr><td class="table_code">
+                        
+                            <p>HTML CSS JS</p>
+                        
+                    </td></tr>
+                    <tr>
+                        <td class="table_main">
+                        <h3 class="table_title">Моё первое портфолио</h3>
+                        <p class="table_description">Познакомился с алгоритмами JS и CSS с помощью нейросети, сделан без помощи макета</p>
+                        <a target="_blank" href="https://optimist2608.github.io/My-portfolio/" class="sec1_a table_a">Live &lt;~&gt;</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="demo_proj" id="proj2">
+            <table class="demo_table">
+                <tbody>
+                    <tr><td class="table_pic">
+                        
+                            <picture class="table_pic">
+                            <source srcset="./img/projects/table/secportf.avif" type="image/avif">
+                            <source srcset="./img/projects/table/secportf.webp" type="image/webp">
+                            <img src="./img/projects/table/secportf.png" alt="photo_portfolio">
+                            </picture>
+                        
+                    </td></tr>
+                    <tr><td class="table_code">
+                        
+                            <p>HTML CSS</p>
+                        
+                    </td></tr>
+                    <tr>
+                        <td class="table_main">
+                        <h3 class="table_title">Моё второе портфолио</h3>
+                        <p class="table_description">Делаю сам без помощи и JS, добавлен адаптив в отличие от 1 портфолио</p>
+                        <a href="#" class="sec1_a table_a">Live &lt;~&gt;</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="demo_proj" id="proj3">
+            <table class="demo_table">
+                <tbody>
+                    <tr><td class="table_pic">
+                        
+                            <picture class="table_pic">
+                            <source srcset="./img/projects/table/secportf.avif" type="image/avif">
+                            <source srcset="./img/projects/table/secportf.webp" type="image/webp">
+                            <img src="./img/projects/table/secportf.png" alt="photo_portfolio">
+                            </picture>
+                        
+                    </td></tr>
+                    <tr><td class="table_code">
+                        
+                            <p>HTML CSS</p>
+                        
+                    </td></tr>
+                    <tr>
+                        <td class="table_main">
+                        <h3 class="table_title">Моё второе портфолио</h3>
+                        <p class="table_description">Делаю сам без помощи и JS, добавлен адаптив в отличие от 1 портфолио</p>
+                        <a href="#" class="sec1_a table_a">Live &lt;~&gt;</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+            <div class="demo_proj" id="proj4">
+                <table class="demo_table">
+                    <tbody>
+                        <tr><td class="table_pic">
+                            
+                                <picture class="table_pic">
+                                <source srcset="./img/projects/table/secportf.avif" type="image/avif">
+                                <source srcset="./img/projects/table/secportf.webp" type="image/webp">
+                                <img src="./img/projects/table/secportf.png" alt="photo_portfolio">
+                                </picture>
+                            
+                        </td></tr>
+                        <tr><td class="table_code">
+                            
+                                <p>HTML CSS</p>
+                            
+                        </td></tr>
+                        <tr>
+                            <td class="table_main">
+                            <h3 class="table_title">Моё второе портфолио</h3>
+                            <p class="table_description">Делаю сам без помощи и JS, добавлен адаптив в отличие от 1 портфолио</p>
+                            <a href="#" class="sec1_a table_a">Live &lt;~&gt;</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
+    </section>
+
+</body>
+</html>

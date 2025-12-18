@@ -1,0 +1,432 @@
+@font-face {
+    font-family: 'FiraCode-bold';
+    src:
+    url('./fonts/FiraCode-Bold.woff2') format('woff2'),
+    url('./fonts/FiraCode-Bold.woff') format('woff'),
+    url('./fonts/FiraCode-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraCode-semibold';
+    src:
+    url('./fonts/FiraCode-SemiBold.woff2') format('woff2'),
+    url('./fonts/FiraCode-SemiBold.woff') format('woff'),
+    url('./fonts/FiraCode-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraCode-medium';
+    src:
+    url('./fonts/FiraCode-Medium.woff2') format('woff2'),
+    url('./fonts/FiraCode-Medium.woff') format('woff'),
+    url('./fonts/FiraCode-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraCode-regular';
+    src:
+    url('./fonts/FiraCode-Regular.woff2') format('woff2'),
+    url('./fonts/FiraCode-Regular.woff') format('woff'),
+    url('./fonts/FiraCode-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    font-family: 'FiraCode-regular';
+    font-size: 16px;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color: #282C33;
+    color: #ABB2BF  ;
+}
+img {
+    vertical-align: top;
+}
+.pink {
+    color: #C778DD;
+}
+a {
+    text-decoration: none;
+    color: #ABB2BF;
+    transition: 300ms;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    cursor: pointer;
+    font-family: 'FiraCode-medium';
+}
+button {
+    transition: 300ms;
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+}
+/*
+    ███████     █████    █████                        
+  ███▒▒▒▒▒███  ▒▒███    ▒▒███                         
+ ███     ▒▒███ ███████   ▒███████    ██████  ████████ 
+▒███      ▒███▒▒▒███▒    ▒███▒▒███  ███▒▒███▒▒███▒▒███
+▒███      ▒███  ▒███     ▒███ ▒███ ▒███████  ▒███ ▒▒▒ 
+▒▒███     ███   ▒███ ███ ▒███ ▒███ ▒███▒▒▒   ▒███     
+ ▒▒▒███████▒    ▒▒█████  ████ █████▒▒██████  █████    
+   ▒▒▒▒▒▒▒       ▒▒▒▒▒  ▒▒▒▒ ▒▒▒▒▒  ▒▒▒▒▒▒  ▒▒▒▒▒     
+*/
+.social {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    width: 32px;
+    height: 322px;
+    left: 17px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+#soc1 {
+    height: 199px;
+}
+.social svg {
+    fill: #abb2bf;
+    width: 21px;
+    height: 20px;
+}
+
+/*
+ █████   █████ ██████████   █████████   ██████████  
+▒▒███   ▒▒███ ▒▒███▒▒▒▒▒█  ███▒▒▒▒▒███ ▒▒███▒▒▒▒███ 
+ ▒███    ▒███  ▒███  █ ▒  ▒███    ▒███  ▒███   ▒▒███
+ ▒███████████  ▒██████    ▒███████████  ▒███    ▒███
+ ▒███▒▒▒▒▒███  ▒███▒▒█    ▒███▒▒▒▒▒███  ▒███    ▒███
+ ▒███    ▒███  ▒███ ▒   █ ▒███    ▒███  ▒███    ███ 
+ █████   █████ ██████████ █████   █████ ██████████  
+▒▒▒▒▒   ▒▒▒▒▒ ▒▒▒▒▒▒▒▒▒▒ ▒▒▒▒▒   ▒▒▒▒▒ ▒▒▒▒▒▒▒▒▒▒   
+*/
+
+.container {
+    margin: 0 410px ;
+    display: block;
+    /* border: 1px solid red; */
+    position: relative;
+    max-width: 1100px;
+    min-width: 1100px;
+}
+.head {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-self: flex-start;
+    gap:570px ;
+    
+    height: 61px;
+    margin-bottom: 62px;
+}
+.head div {
+    display: flex;
+    margin-top: 32px;
+}
+.head_div1 {
+    gap: 8px;
+}
+
+.head_div2 {
+    gap: 32px;
+}
+.lang::after {
+    content: url('./img/arrow/arrow.png');
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.head_text {
+    font-family: 'FiraCode-bold';
+    color: white;
+    user-select: none;
+    cursor: pointer;
+}
+.head_text::before {
+    content: url("./img/logo/logo.png");
+    position: relative;
+    top: 2.5px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-right: 8px;
+}
+.head_text:hover::before {
+    content: url("./img/logo/logohover.png");
+    position: relative;
+    top: 2.5px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-right: 8px;
+    animation: scale 300ms both;
+}
+
+.active {
+    color: white;
+    font-family: 'FiraCode-medium';
+}
+.head_div2 a:hover:not(.active) {
+    color: white;
+    font-family: 'FiraCode-medium';
+    animation: scale 300ms both;
+}
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+/*
+  █████████  ██████████   █████████  ███████████ █████    ███████    ██████   █████
+ ███▒▒▒▒▒███▒▒███▒▒▒▒▒█  ███▒▒▒▒▒███▒█▒▒▒███▒▒▒█▒▒███   ███▒▒▒▒▒███ ▒▒██████ ▒▒███ 
+▒███    ▒▒▒  ▒███  █ ▒  ███     ▒▒▒ ▒   ▒███  ▒  ▒███  ███     ▒▒███ ▒███▒███ ▒███ 
+▒▒█████████  ▒██████   ▒███             ▒███     ▒███ ▒███      ▒███ ▒███▒▒███▒███ 
+ ▒▒▒▒▒▒▒▒███ ▒███▒▒█   ▒███             ▒███     ▒███ ▒███      ▒███ ▒███ ▒▒██████ 
+ ███    ▒███ ▒███ ▒   █▒▒███     ███    ▒███     ▒███ ▒▒███     ███  ▒███  ▒▒█████ 
+▒▒█████████  ██████████ ▒▒█████████     █████    █████ ▒▒▒███████▒   █████  ▒▒█████
+ ▒▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒▒▒▒▒   ▒▒▒▒▒▒▒▒▒     ▒▒▒▒▒    ▒▒▒▒▒    ▒▒▒▒▒▒▒    ▒▒▒▒▒    ▒▒▒▒▒ 
+*/
+.sec1 {
+    /* width: 1030px; */
+    height: 423px;
+    display: flex;
+    gap: 18px;
+}
+.sec1_block {
+    margin-top: 74px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    flex-direction: column;
+}
+.sec1_h1 {
+    color: white;
+    font-family: 'FiraCode-semibold';
+}
+.sec1_p {
+    width: 463px;
+}
+.sec1_a {
+    background-color: transparent;
+    border: 1px solid #C778DD;
+    padding: 16px 8px;
+    color: white;
+    display: inline-block;
+    width: 148px;
+    font-family: 'FiraCode-medium';
+}
+.sec1_a:hover {
+    background-color: #483B55;
+}
+.under {
+    width: 402px;
+    height: 37px;
+    border: 1px solid #ABB2BF;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+}
+.under p {
+    margin-top: 8px;
+    user-select: none;
+    margin-left: 34px;
+}
+.pic_dic {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.me {
+    display: inline-block;
+    width: 403.2px;
+    height: 386px;
+    /* border: 1px solid red; */
+}
+.pic__me {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.kv {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    /* border: 1px solid red; */
+    position: relative;
+    top: 10.5px;
+    margin-left: 8px;
+    user-select: none;
+}
+/*
+  █████████  ██████████   █████████  ███████████ █████    ███████    ██████   █████
+ ███▒▒▒▒▒███▒▒███▒▒▒▒▒█  ███▒▒▒▒▒███▒█▒▒▒███▒▒▒█▒▒███   ███▒▒▒▒▒███ ▒▒██████ ▒▒███ 
+▒███    ▒▒▒  ▒███  █ ▒  ███     ▒▒▒ ▒   ▒███  ▒  ▒███  ███     ▒▒███ ▒███▒███ ▒███ 
+▒▒█████████  ▒██████   ▒███             ▒███     ▒███ ▒███      ▒███ ▒███▒▒███▒███ 
+ ▒▒▒▒▒▒▒▒███ ▒███▒▒█   ▒███             ▒███     ▒███ ▒███      ▒███ ▒███ ▒▒██████ 
+ ███    ▒███ ▒███ ▒   █▒▒███     ███    ▒███     ▒███ ▒▒███     ███  ▒███  ▒▒█████ 
+▒▒█████████  ██████████ ▒▒█████████     █████    █████ ▒▒▒███████▒   █████  ▒▒█████
+ ▒▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒▒▒▒▒   ▒▒▒▒▒▒▒▒▒     ▒▒▒▒▒    ▒▒▒▒▒    ▒▒▒▒▒▒▒    ▒▒▒▒▒    ▒▒▒▒▒ 
+*/
+.hid {
+    visibility: hidden;
+    position: fixed;
+    transform: scale(0);
+}
+.citate {
+    margin-top: 112px;
+    padding-left: 326px;
+    color: white;
+    font-size: 24px;
+}
+.block_cit {
+    padding: 32px;
+    border: 1px solid #595F68 ;
+    font-family: 'FiraCode-medium';
+    position: relative;
+}
+.block_cit::after {
+    content: url("./img/pref/pref.png");
+    position: absolute;
+    top: 175px;
+    left: 654px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 2;
+}
+.block_cit::before {
+    content: url("./img/pref/pref.png");
+    position: absolute;
+    top: -17.3px;
+    left: 11px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 2;
+}
+.subblock_cit {
+    border: 1px solid #595F68 ;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: inline-block;
+    margin-left: 514px;
+    position: relative;
+    width: 258px ;
+}
+.pref {
+    position: absolute;
+    width: 25.47px;
+    height: 20.7px;
+    top: 0px;
+    left: 0px;
+}
+/*
+  █████████  ██████████   █████████  ███████████ █████    ███████    ██████   █████
+ ███▒▒▒▒▒███▒▒███▒▒▒▒▒█  ███▒▒▒▒▒███▒█▒▒▒███▒▒▒█▒▒███   ███▒▒▒▒▒███ ▒▒██████ ▒▒███ 
+▒███    ▒▒▒  ▒███  █ ▒  ███     ▒▒▒ ▒   ▒███  ▒  ▒███  ███     ▒▒███ ▒███▒███ ▒███ 
+▒▒█████████  ▒██████   ▒███             ▒███     ▒███ ▒███      ▒███ ▒███▒▒███▒███ 
+ ▒▒▒▒▒▒▒▒███ ▒███▒▒█   ▒███             ▒███     ▒███ ▒███      ▒███ ▒███ ▒▒██████ 
+ ███    ▒███ ▒███ ▒   █▒▒███     ███    ▒███     ▒███ ▒▒███     ███  ▒███  ▒▒█████ 
+▒▒█████████  ██████████ ▒▒█████████     █████    █████ ▒▒▒███████▒   █████  ▒▒█████
+ ▒▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒▒▒▒▒   ▒▒▒▒▒▒▒▒▒     ▒▒▒▒▒    ▒▒▒▒▒    ▒▒▒▒▒▒▒    ▒▒▒▒▒    ▒▒▒▒▒ 
+*/
+.projects {
+    margin-top: 74px;
+}
+.proj_head {
+    width: 701px;
+    height: 42px;
+    display: flex;
+    gap: 230px;
+    /* justify-content: space-between; */
+    margin-bottom: 48px;
+}
+.proj_head_1 {
+    display: flex;
+    justify-content: left;
+    gap: 16px;
+}
+.title {
+    color: white;
+    font-family: 'FiraCode-medium';
+    font-size: 32px;
+}
+.proj_line {
+    margin-top: 20.5px;
+}
+.proj_head_2 p {
+    width: 175px;
+    font-family: 'FiraCode-medium';
+    margin-top: 10px;
+    color: white;
+}
+.demo {
+    padding-left: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;    
+}
+.demo_proj {
+    width: 330.58px;
+    max-height: 428px;
+    margin-bottom: 25px;
+}
+.demo_table {
+    /* border: 1px solid #8A919C;    */
+    width: 330.58px;
+    max-height: 428px;
+    border-collapse: collapse;
+    /* margin-right: 16px; */
+}
+.demo_table tr td {
+    border: 1px solid #8A919C;
+    
+}
+.table_pic {
+    width: 330.58px;
+    height: 201px;
+}
+.table_code p {
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+}
+.table_title {
+    font-size: 24px;
+    font-family: 'FiraCode-medium';
+    color: white;
+    margin: 16px;
+}
+.table_description {
+    margin-left: 16px;
+    margin-right: 16px;
+    /* padding-bottom: 8px; */
+}
+.table_a {
+    width: 109px;
+    margin: 16px;
+}
