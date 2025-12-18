@@ -84,6 +84,9 @@ button {
 ul {
     list-style: none;
 }
+.anti_font {
+    font-family: Arial, Helvetica, sans-serif;
+}
 /*
     ███████     █████    █████                        
   ███▒▒▒▒▒███  ▒▒███    ▒▒███                         
@@ -167,43 +170,45 @@ ul {
     color: white;
     user-select: none;
     cursor: pointer;
+    margin-left: 24px;
 }
 .head_text::before {
     content: url("./img/logo/logo.png");
-    position: relative;
-    top: 2.5px;
+    position: absolute;
+    top: 34.5px;
     left: 0;
-    width: 100%;
-    height: 100%;
-    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    transform: scale(1);
+    transition: transform 500ms ease-out;
+    /* margin-right: 8px; */
 }
 .head_text:hover::before {
     content: url("./img/logo/logohover.png");
-    position: relative;
-    top: 2.5px;
+    position: absolute;
+    top: 34.5px;
     left: 0;
-    width: 100%;
-    height: 100%;
-    margin-right: 8px;
-    animation: scale 300ms both;
+    width: 16px;
+    height: 16px;
+    transform: scale(1.2);
+    transition: transform 200ms ease-in;
 }
 
 .active {
     color: white;
     font-family: 'FiraCode-medium';
 }
+
+.head_div2 a:not(.active) {
+    transform: scale(1);
+    transition: transform 500ms ease-out; 
+}
+
 .head_div2 a:hover:not(.active) {
     color: white;
     font-family: 'FiraCode-medium';
-    animation: scale 300ms both;
-}
-@keyframes scale {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.2);
-    }
+    transform: scale(1.2);
+    transition: transform 200ms ease-in; 
 }
 /*
   █████████  ██████████   █████████  ███████████ █████    ███████    ██████   █████
@@ -477,16 +482,19 @@ ul {
     border-collapse: collapse;
     width: 178px;
     height: 103px;
+    transition: 300ms;
 }
 .sk {
     width: 178px;
     height: 103px;
     margin: 16px;
     cursor: pointer;
-    transition: 300ms;
+    transform: scale(1);
+    transition: transform 500ms ease-out;
 }
 .sk:hover {
-    animation: scale 300ms both;    
+    transform: scale(1.2);
+    transition: transform 200ms ease-in;    
 }
 .skil_semi {
     font-family: 'FiraCode-semibold';
