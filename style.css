@@ -55,6 +55,12 @@ body{
     background-color: #282C33;
     color: #ABB2BF  ;
 }
+.defolt {
+    font-family: 'FiraCode-regular';
+    font-size: 16px;
+    background-color: #282C33;
+    color: #ABB2BF  ;
+}
 img {
     vertical-align: top;
 }
@@ -122,7 +128,7 @@ ul {
 .container {
     margin: 0 410px ;
     display: block;
-    /* border: 1px solid red; padding: 1px; */
+    /* border: 0.01px solid red; */
     position: relative;
     max-width: 1100px;
     /* min-width: 1100px; */
@@ -233,10 +239,10 @@ ul {
 .sec1_a {
     background-color: transparent;
     border: 1px solid #C778DD;
-    padding: 16px 8px;
+    padding:8px 16px ;
     color: white;
     display: inline-block;
-    width: 148px;
+    width: 218px;
     font-family: 'FiraCode-medium';
 }
 .sec1_a:hover {
@@ -378,11 +384,14 @@ ul {
 .proj_line {
     margin-top: 20.5px;
 }
-.proj_head_2 p {
+.proj_head_2 a {
     width: 175px;
     font-family: 'FiraCode-medium';
     margin-top: 10px;
     color: white;
+}
+.proj_head_2 a:hover {
+    text-decoration-line: underline;
 }
 .demo {
     padding-left: 2px;
@@ -428,11 +437,185 @@ ul {
     /* padding-bottom: 8px; */
 }
 .table_a {
-    width: 109px;
+    width: 111px;
     margin: 16px;
 }
 
 .error {
     width: 331px;
     height: 209px;
+}
+/*
+  █████████  ██████████   █████████  ███████████ █████    ███████    ██████   █████
+ ███▒▒▒▒▒███▒▒███▒▒▒▒▒█  ███▒▒▒▒▒███▒█▒▒▒███▒▒▒█▒▒███   ███▒▒▒▒▒███ ▒▒██████ ▒▒███ 
+▒███    ▒▒▒  ▒███  █ ▒  ███     ▒▒▒ ▒   ▒███  ▒  ▒███  ███     ▒▒███ ▒███▒███ ▒███ 
+▒▒█████████  ▒██████   ▒███             ▒███     ▒███ ▒███      ▒███ ▒███▒▒███▒███ 
+ ▒▒▒▒▒▒▒▒███ ▒███▒▒█   ▒███             ▒███     ▒███ ▒███      ▒███ ▒███ ▒▒██████ 
+ ███    ▒███ ▒███ ▒   █▒▒███     ███    ▒███     ▒███ ▒▒███     ███  ▒███  ▒▒█████ 
+▒▒█████████  ██████████ ▒▒█████████     █████    █████ ▒▒▒███████▒   █████  ▒▒█████
+ ▒▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒▒▒▒▒   ▒▒▒▒▒▒▒▒▒     ▒▒▒▒▒    ▒▒▒▒▒    ▒▒▒▒▒▒▒    ▒▒▒▒▒    ▒▒▒▒▒ 
+*/
+
+.skills {
+    margin-top: 106px;
+    margin-bottom: 112px;
+}
+.flex_skill {
+    display: flex;
+    margin: 43px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 640px;
+    height: 280px;
+    position: relative;
+    left: 345px;
+    /* border: 1px solid red; */
+    justify-content: right;
+}
+.skil_table {
+    border: 1px solid #8A909C;
+    border-collapse: collapse;
+    width: 178px;
+    height: 103px;
+}
+.sk {
+    width: 178px;
+    height: 103px;
+    margin: 16px;
+    cursor: pointer;
+    transition: 300ms;
+}
+.sk:hover {
+    animation: scale 300ms both;    
+}
+.skil_semi {
+    font-family: 'FiraCode-semibold';
+    color: white;
+}
+.skil_table tbody tr td {
+    border: 1px solid #ABB2BF;
+    border-collapse: collapse;
+    padding: 8px;
+}
+.skil_line {
+    width: 223px;
+}
+/*
+  █████████  ██████████   █████████  ███████████ █████    ███████    ██████   █████
+ ███▒▒▒▒▒███▒▒███▒▒▒▒▒█  ███▒▒▒▒▒███▒█▒▒▒███▒▒▒█▒▒███   ███▒▒▒▒▒███ ▒▒██████ ▒▒███ 
+▒███    ▒▒▒  ▒███  █ ▒  ███     ▒▒▒ ▒   ▒███  ▒  ▒███  ███     ▒▒███ ▒███▒███ ▒███ 
+▒▒█████████  ▒██████   ▒███             ▒███     ▒███ ▒███      ▒███ ▒███▒▒███▒███ 
+ ▒▒▒▒▒▒▒▒███ ▒███▒▒█   ▒███             ▒███     ▒███ ▒███      ▒███ ▒███ ▒▒██████ 
+ ███    ▒███ ▒███ ▒   █▒▒███     ███    ▒███     ▒███ ▒▒███     ███  ▒███  ▒▒█████ 
+▒▒█████████  ██████████ ▒▒█████████     █████    █████ ▒▒▒███████▒   █████  ▒▒█████
+ ▒▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒▒▒▒▒   ▒▒▒▒▒▒▒▒▒     ▒▒▒▒▒    ▒▒▒▒▒    ▒▒▒▒▒▒▒    ▒▒▒▒▒    ▒▒▒▒▒ 
+*/
+.about_line {
+    width: 326px;
+}
+.about_text {
+    margin-top: 23px;
+    line-height: 126%;
+    max-width: 515px;
+    margin-bottom: 27px;
+}
+.read {
+    width: 159px;
+}
+.block_pic {
+    display: flex;
+    gap: 166px;
+    position: relative;
+}
+.about_pic {
+    position: relative;
+    top: -70px;
+}
+.about {
+    margin-bottom: 112px;
+}
+/*
+  █████████  ██████████   █████████  ███████████ █████    ███████    ██████   █████
+ ███▒▒▒▒▒███▒▒███▒▒▒▒▒█  ███▒▒▒▒▒███▒█▒▒▒███▒▒▒█▒▒███   ███▒▒▒▒▒███ ▒▒██████ ▒▒███ 
+▒███    ▒▒▒  ▒███  █ ▒  ███     ▒▒▒ ▒   ▒███  ▒  ▒███  ███     ▒▒███ ▒███▒███ ▒███ 
+▒▒█████████  ▒██████   ▒███             ▒███     ▒███ ▒███      ▒███ ▒███▒▒███▒███ 
+ ▒▒▒▒▒▒▒▒███ ▒███▒▒█   ▒███             ▒███     ▒███ ▒███      ▒███ ▒███ ▒▒██████ 
+ ███    ▒███ ▒███ ▒   █▒▒███     ███    ▒███     ▒███ ▒▒███     ███  ▒███  ▒▒█████ 
+▒▒█████████  ██████████ ▒▒█████████     █████    █████ ▒▒▒███████▒   █████  ▒▒█████
+ ▒▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒▒▒▒▒   ▒▒▒▒▒▒▒▒▒     ▒▒▒▒▒    ▒▒▒▒▒    ▒▒▒▒▒▒▒    ▒▒▒▒▒    ▒▒▒▒▒ 
+*/
+.cont_line {
+    width: 127px;
+}
+.cont_block {
+    width: 505px;
+}
+.cont_flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.contact_mes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid #696F79;
+    padding: 16px;
+}
+.mail, .tg {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    position: relative;
+    fill: #abb2bf;
+    top: 12px;
+    right: 5px;
+
+}
+
+.contacts {
+    margin-bottom: 145px;
+}
+/*
+ ███████████    ███████       ███████    ███████████ ██████████ ███████████  
+▒▒███▒▒▒▒▒▒█  ███▒▒▒▒▒███   ███▒▒▒▒▒███ ▒█▒▒▒███▒▒▒█▒▒███▒▒▒▒▒█▒▒███▒▒▒▒▒███ 
+ ▒███   █ ▒  ███     ▒▒███ ███     ▒▒███▒   ▒███  ▒  ▒███  █ ▒  ▒███    ▒███ 
+ ▒███████   ▒███      ▒███▒███      ▒███    ▒███     ▒██████    ▒██████████  
+ ▒███▒▒▒█   ▒███      ▒███▒███      ▒███    ▒███     ▒███▒▒█    ▒███▒▒▒▒▒███ 
+ ▒███  ▒    ▒▒███     ███ ▒▒███     ███     ▒███     ▒███ ▒   █ ▒███    ▒███  
+ █████       ▒▒▒███████▒   ▒▒▒███████▒      █████    ██████████ █████   █████
+▒▒▒▒▒          ▒▒▒▒▒▒▒       ▒▒▒▒▒▒▒       ▒▒▒▒▒    ▒▒▒▒▒▒▒▒▒▒ ▒▒▒▒▒   ▒▒▒▒▒  
+*/
+.foot {
+    border-top: 2px solid #595F68;
+    padding: 32px 170.5px ;
+    display: flex;
+    justify-content: space-between;
+}
+.white {
+    color: white;
+}
+.foot_h {
+    margin-bottom: 16px;
+}
+
+.media_text {
+    font-family: 'FiraCode-medium';
+    font-size: 24px;
+    color: white;
+    width: 130px;
+    margin-bottom: 12px;
+}
+.foot_img {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.f_tg, .f_git, .f_mail {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    position: relative;
+    fill: #abb2bf;
 }
